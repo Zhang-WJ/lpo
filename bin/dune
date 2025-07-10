@@ -1,0 +1,11 @@
+(library
+ (name prefix_tree)
+ (libraries core)
+ (preprocess
+  (pps ppx_jane ppx_inline_test ppx_assert))
+ (inline_tests))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
